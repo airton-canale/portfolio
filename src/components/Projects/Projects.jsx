@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./projects.css";
@@ -9,6 +9,7 @@ const Projects = () => {
       url: "/assets/projects-images/netflix.png",
       title: "Netflix Clone",
       redirect: "https://react-calculator.canale.dev",
+      stack: ['ReactJS', 'JAVASCRIPT']
     },
     {
       url: "/assets/projects-images/calculator.png",
@@ -39,20 +40,35 @@ const Projects = () => {
   const [sliderRef, instanceRef] = useKeenSlider({
     slideChanged() {},
   });
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    instanceRef.current.on("slideChanged", (a) =>
+      setActiveSlide(a.track.details.abs)
+    );
+  }, []);
 
   return (
     <>
       <div className="container-images">
+        <button className="prev" onClick={() => instanceRef.current.prev()}>
+          {"<"}
+        </button>
         {projectsCarousel.map((project, i) => {
           return (
-            <img
-              onClick={() => instanceRef.current.moveToIdx(i)}
-              className="images"
-              src={project.url}
-              alt={project.title}
-            />
+            <>
+              <img
+                onClick={() => instanceRef.current.moveToIdx(i)}
+                className={["images", activeSlide === i && "active-project"]
+                  .filter(Boolean)
+                  .join(" ")}
+                src={project.url}
+                alt={project.title}
+              />
+            </>
           );
         })}
+        <button className="next" onClick={() => instanceRef.current.next()}>{">"}</button>
       </div>
       <section class="projetos" id="projetos" data-anime="js-scroll">
         <h1>Projetos</h1>
@@ -63,12 +79,22 @@ const Projects = () => {
                 <div>
                   <h1>{project.title}</h1>
                 </div>
-                <img
+                <div>
+                  {/* <ul>
+                    {project.stack.map((t) => {
+                    return (
+                        <li></li>
+                    )
+                  })}
+                </ul> */}
+                </div>
+                {/* <img
                   className="projects"
                   src={project.url}
                   alt={project.title}
-                />
+                /> */}
                 <div className="project-link">
+                  {/* <button>a</button> */}
                   <a href={project.redirect}>Redirect</a>
                 </div>
               </div>

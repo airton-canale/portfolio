@@ -43,23 +43,6 @@
   cursor: pointer;
 }
 
-@keyframes scroll-down {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -15px, 0);
-  }
-  30% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(0, 10px, 0);
-  }
-}
-
 .principal .scroll {
   position: absolute;
   bottom: 1rem;
@@ -100,21 +83,6 @@
   animation: blink 0.6s infinite alternate;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .principal__botao {
   display: flex;
   width: 350px;
@@ -125,7 +93,7 @@
 .principal__botao-github {
   display: flex;
   align-items: center;
-  padding: 3px 5px 5px; 
+  padding: 3px 5px 5px;
   justify-content: space-evenly;
   width: 140px;
   border-radius: 8px;
@@ -139,7 +107,7 @@
   height: 40px;
 }
 
-.principal__botao-linkedin::before{
+.principal__botao-linkedin::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -155,26 +123,12 @@
 }
 
 .principal__botao-linkedin:hover,
-.principal__botao-github:hover{
+.principal__botao-github:hover {
   background-color: #272727;
   text-shadow: 1px 1px 3px #00bbc5;
 }
 
-@keyframes move {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.principal__botao-github::before{
+.principal__botao-github::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -200,12 +154,9 @@
 }
 
 .principal__botao-linkedin img,
-.principal__botao-github img{
+.principal__botao-github img {
   width: 22px;
 }
-
-
-
 
 @media (max-width: 1325px) {
   .principal h1 {
@@ -260,7 +211,6 @@
     width: 320px;
     margin: 1rem auto;
   }
-
 }
 
 @media (max-width: 460px) {
@@ -273,12 +223,58 @@
   }
 
   .principal__botao-linkedin,
-  .principal__botao-github{
+  .principal__botao-github {
     width: 110px;
   }
 
   .principal__botao {
     width: auto;
     justify-content: space-around;
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -15px, 0);
+  }
+  30% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }

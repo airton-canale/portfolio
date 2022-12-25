@@ -9,7 +9,7 @@ const Projects = () => {
       url: "/assets/projects-images/netflix.png",
       title: "Netflix Clone",
       redirect: "https://react-calculator.canale.dev",
-      stack: ['ReactJS', 'JAVASCRIPT']
+      stack: ["ReactJS", "JAVASCRIPT"],
     },
     {
       url: "/assets/projects-images/calculator.png",
@@ -50,6 +50,7 @@ const Projects = () => {
 
   return (
     <>
+      <section class="projetos" id="projetos" data-anime="js-scroll">
       <div className="container-images">
         <button className="prev" onClick={() => instanceRef.current.prev()}>
           {"<"}
@@ -68,9 +69,10 @@ const Projects = () => {
             </>
           );
         })}
-        <button className="next" onClick={() => instanceRef.current.next()}>{">"}</button>
+        <button className="next" onClick={() => instanceRef.current.next()}>
+          {">"}
+        </button>
       </div>
-      <section class="projetos" id="projetos" data-anime="js-scroll">
         <h1>Projetos</h1>
         <div ref={sliderRef} className="keen-slider">
           {projectsCarousel.map((project) => {
@@ -80,21 +82,15 @@ const Projects = () => {
                   <h1>{project.title}</h1>
                 </div>
                 <div>
-                  {/* <ul>
-                    {project.stack.map((t) => {
+                  <ul>
+                    {project.stack?.map((t) => {
                     return (
-                        <li></li>
+                        <li>{t}</li>
                     )
                   })}
-                </ul> */}
+                </ul>
                 </div>
-                {/* <img
-                  className="projects"
-                  src={project.url}
-                  alt={project.title}
-                /> */}
                 <div className="project-link">
-                  {/* <button>a</button> */}
                   <a href={project.redirect}>Redirect</a>
                 </div>
               </div>

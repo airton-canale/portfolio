@@ -5,11 +5,52 @@
   }
   
   body {
+    /* color: #c4c4c4; */
     margin: 0;
     border: 0;
     background-color: #121212;
-    color: white;
     font-family: "Inter", sans-serif;
     letter-spacing: 1px;
   }
-  
+
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  h2 {
+  font-size: 1rem;
+}
+
+section h1 {
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00d2df;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00bbc5;
+}
+
+::selection {
+  background-color: rgba(101, 24, 180, 1);
+}

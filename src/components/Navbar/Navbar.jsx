@@ -8,7 +8,6 @@ const Navbar = ({ links }) => {
         <p>
           <a href="#home">&lsaquo;AC/&rsaquo;</a>
         </p>
-        <button data-menu="button" aria-controls="menu"></button>
         <ul data-menu="list" id="menu">
           {links.map((l) => {
             return (

@@ -1,10 +1,10 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
 import { useRef } from "react";
-import Experience from "./components/Experience/Experience";
-import Projects from "./components/Projects/Projects";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 
 function App() {
   const aboutRef = useRef();

@@ -6,7 +6,6 @@
   align-items: center;
   min-height: 60vh;
   padding: 6.5% 15%;
-  /* min-height: 35vh; */
 }
 
 .principal__left {
@@ -68,7 +67,7 @@
 .principal span {
   font-size: 3rem;
   text-transform: uppercase;
-  color: #00d2df;
+  color: #75ba75;
   font-weight: 600;
   letter-spacing: 3px;
 }
@@ -115,8 +114,8 @@
   border-radius: 9px;
   background: linear-gradient(
     -45deg,
-    rgba(147, 88, 247, 1),
-    rgba(16, 215, 226, 1)
+    #8566e5,
+    #7fd662
   );
   background-size: 400%;
   animation: move infinite forwards 4s;

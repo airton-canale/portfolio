@@ -1,14 +1,13 @@
 import React from "react";
 import "./navbar.css";
-
 const Navbar = ({ links }) => {
   return (
     <header>
       <nav className="navbar">
         <p>
-          <a href="#home">&lsaquo;AC/&rsaquo;</a>
+          <a onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>&lsaquo;AC/&rsaquo;</a>
         </p>
-        <ul data-menu="list" id="menu">
+        <ul  id="menu">
           {links.map((l) => {
             return (
               <a onClick={l.onClick}>

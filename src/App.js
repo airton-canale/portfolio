@@ -9,6 +9,8 @@ import Projects from "./components/Projects";
 function App() {
   const aboutRef = useRef();
   const experienceRef = useRef();
+  const projectsRef = useRef();
+
 
   return (
     <div className="App">
@@ -36,7 +38,7 @@ function App() {
           },
           {
             onClick: () =>
-              aboutRef.current.scrollIntoView({
+            projectsRef.current.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
               }),
@@ -54,7 +56,7 @@ function App() {
       />
       <About ref={aboutRef} />
       <Experience ref={experienceRef} />
-      <Projects />
+      <Projects ref={projectsRef} />
     </div>
   );
 }

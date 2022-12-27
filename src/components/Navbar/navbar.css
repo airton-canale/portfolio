@@ -29,7 +29,7 @@
 .navbar ul li::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #00d2df;
+  border-bottom: 2px solid #75ba75;
   margin-top: 5px;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -50,10 +50,11 @@
 }
 
 .navbar p a {
-  color: #00d2df;
+  color: #75ba75;
   transition: 0.3s;
 }
 
 .navbar p a:hover {
-  color: rgba(147, 88, 247, 1);
+  color: #8566e5;
+  cursor: pointer;
 }

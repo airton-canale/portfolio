@@ -8,7 +8,6 @@ const Experience = forwardRef((props, ref) => {
     <section
       class="experiencia"
       id="experiencia"
-      data-anime="js-scroll"
       ref={ref}
     >
       <h1>Experiência</h1>
@@ -29,7 +28,7 @@ const Experience = forwardRef((props, ref) => {
             </li>
           </ul>
         </section>
-        <div class="experiencia__descricao" data-tab="content">
+        <div class="experiencia__descricao" >
           {
             [
               <section key={1} className="show-right">

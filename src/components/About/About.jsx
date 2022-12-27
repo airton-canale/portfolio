@@ -4,7 +4,7 @@ import "./about.css";
 const About = forwardRef((props, ref) => {
 
   return (
-    <section class="sobre-mim" id="sobre" data-anime="js-scroll" ref={ref}>
+    <section class="sobre-mim" id="sobre" ref={ref}>
       <div class="sobre-mim__foto">
         <img src="https://github.com/airton-canale.png" alt="Me" />
       </div>

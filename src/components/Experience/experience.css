@@ -14,7 +14,7 @@
 }
 .experiencia__lugares ul li.active {
     background-color: #151515;
-    border-left: 2px solid #00d2df;
+    border-left: 2px solid #7fd662;
     font-weight: 600;
   }
 
@@ -41,7 +41,7 @@
 
 .experiencia__lugares ul li.active {
   background-color: #151515;
-  border-left: 2px solid #00d2df;
+  border-left: 2px solid #7fd662;
   font-weight: 600;
 }
 
@@ -87,7 +87,7 @@
 .experiencia__descricao-local {
   margin: 2rem 0;
   font-size: 0.85rem;
-  color: #00d2df !important;
+  color: #7fd662 !important;
   font-weight: bold;
 }
 
@@ -147,7 +147,7 @@
   .experiencia__lugares ul li.active {
     background-color: #151515;
     border-left: none;
-    border-bottom: 2px solid #00d2df;
+    border-bottom: 2px solid #7fd662;
     font-weight: 600;
   }
 

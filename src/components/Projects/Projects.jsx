@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, forwardRef } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "./projects.css";
 
-const Projects = () => {
+const Projects = forwardRef((props, ref) => {
   const projectsCarousel = [
     {
       url: "/assets/projects-images/netflix.png",
@@ -62,7 +62,7 @@ const Projects = () => {
 
   return (
     <>
-      <section class="projetos" id="projetos" data-anime="js-scroll">
+      <section class="projetos" id="projetos" ref={ref}>
         <div className="container-images">
           <button className="prev" onClick={() => instanceRef.current.prev()}>
             {"<"}
@@ -100,18 +100,21 @@ const Projects = () => {
                   <h2 className="project-bio">{project.bio}</h2>
                 </div>
                 <div>
-                  <ul>
+                  <ul className="project-ul">
                     {project.stack?.map((t) => {
                       return <li>{t}</li>;
                     })}
                   </ul>
                 </div>
-                <div className="project-link">
-                  <a href={project.redirect} target="_blank">
-                    <img src="/assets/link.png" alt="" />
-                    <p>Redirect</p>
-                  </a>{" "}
+                <div class="container-button">
+                  <a href={project.redirect}>
+                    <div class="redirect">
+                      <img src="/assets/link.png" alt="download curriculum" />
+                      <p>Redirect</p>
+                    </div>
+                  </a>
                 </div>
+                <div style={{ marginTop: "30px" }}></div>
               </div>
             );
           })}
@@ -119,6 +122,6 @@ const Projects = () => {
       </section>
     </>
   );
-};
+});
 
 export default Projects;

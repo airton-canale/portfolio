@@ -4,30 +4,30 @@ import "./about.css";
 const About = forwardRef((props, ref) => {
 
   return (
-    <section class="sobre-mim" id="sobre" ref={ref}>
-      <div class="sobre-mim__foto">
-        <img src="https://github.com/airton-canale.png" alt="Me" />
+    <section class="flex justify-around z-0 bg-dark-200 relative py-[6.5%] px-[15%] min-h-[35vh] sobre-mim" id="sobre" ref={ref}>
+      <div class="min-w-[30%] sobre-mim__foto">
+        <img className="w-4/5" src="https://github.com/airton-canale.png" alt="Me" />
       </div>
-      <div class="sobre-mim__descricao">
+      <div class="leading-6 w-[70%] sobre-mim__descricao">
         <h1>Sobre mim</h1>
-        <h2>São Marcos, Rio Grande do Sul</h2>
+        <h2 className="mb-4">São Marcos, Rio Grande do Sul</h2>
         <p>
         Desenvolvedor web Full-Stack, focado em ReactJS, com  conhecimento intermediário de Typescript, Python, Ionic e outras tecnologias similares.
         </p>
-        <div class="sobre-mim__descricao-buttons">
+        <div class="flex w-[350px] justify-between mt-8 sobre-mim__descricao-buttons">
           <a href="" download="">
-            <div class="sobre-mim__descricao-buttons-curriculo">
-              <img src="/assets/cloud-download.png" alt="download curriculum" />
-              <p>Currículo</p>
+            <div class="flex items-center pt-[3px] px-[5px] pb-[5px] justify-evenly w-36 rounded-lg relative bg-dark-100 mt-4 font-semibold text-base tracking-[1.5px] h-10 sobre-mim__descricao-buttons-curriculo">
+              <img className="pt-[9px] px-0 pb-[5px]" src="/assets/cloud-download.png" alt="download curriculum" />
+              <p className="pt-[9px] px-0 pb-[5px]">Currículo</p>
             </div>
           </a>
           <a
             href="mailto: airtonluizcanalefilho@hotmail.com?subject=Airton, vim pelo seu portfólio!"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
-            <div class="sobre-mim__descricao-buttons-email">
-              <img src="/assets/email.png" alt="" />
-              <p>E-mail</p>
+            <div class="flex items-center pt-[3px] px-[5px] pb-[5px] justify-evenly w-36 rounded-lg relative bg-dark-100 mt-4 font-semibold text-base tracking-[1.5px] h-10 sobre-mim__descricao-buttons-email">
+              <img className="pt-[9px] px-0 pb-[5px] w-6" src="/assets/email.png" alt="" />
+              <p className="pt-[9px] px-0 pb-[5px]">E-mail</p>
             </div>
           </a>
         </div>

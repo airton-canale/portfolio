@@ -1,38 +1,8 @@
-.sobre-mim {
-  background-color: #151515;
-  z-index: 0;
-  position: relative;
-}
-
-.sobre-mim {
-  padding: 6.5% 15%;
-  min-height: 35vh;
-}
-
-.sobre-mim__descricao-buttons {
-  display: flex;
-  width: 350px;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
 .sobre-mim__descricao-buttons-curriculo,
 .sobre-mim__descricao-buttons-email {
-  display: flex;
-  align-items: center;
-  padding: 3px 5px 5px;
-  justify-content: space-evenly;
-  width: 140px;
-  border-radius: 8px;
-  position: relative;
-  background-color: #121212;
-  margin-top: 1rem;
   transition: 0.3s;
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 1.5px;
-  height: 40px;
 }
+
 
 .sobre-mim__descricao-buttons-email::before {
   content: "";
@@ -84,40 +54,10 @@
   animation: move infinite forwards 4s;
 }
 
-.sobre-mim__descricao-buttons-curriculo p,
-.sobre-mim__descricao-buttons-curriculo img,
-.sobre-mim__descricao-buttons-email p,
-.sobre-mim__descricao-buttons-email img {
-  padding: 9px 0 5px;
-}
-
-.sobre-mim__descricao-buttons-email img {
-  width: 22px;
-}
-
-.sobre-mim {
-  display: flex;
-  justify-content: space-around;
-}
-
-.sobre-mim__descricao {
-  line-height: 1.5rem;
-  width: 70%;
-}
-
-.sobre-mim h2 {
-  margin-bottom: 1rem;
-}
-
-.sobre-mim__foto {
-  min-width: 30%;
-}
-
 .sobre-mim__foto img {
   border-left: 5px solid #7fd662;
   filter: opacity(55%);
   transition: 0.4s;
-  width: 80%;
 }
 
 .sobre-mim__foto img:hover {

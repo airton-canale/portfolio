@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <div class="bg-slate-100 dark:bg-rose-800 App">
+    <div class="App">
       <Navbar
         links={[
           {

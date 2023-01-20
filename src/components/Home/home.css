@@ -24,12 +24,6 @@
   max-width: 100%;
 }
 
-.principal .scroll {
-  position: absolute;
-  bottom: 1rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
 
 .principal .scroll p {
   padding: 1rem 0;
@@ -47,15 +41,6 @@
   bottom: 1rem;
   font-weight: bold;
   letter-spacing: 2px;
-}
-
-.principal .scroll p {
-  padding: 1rem 0;
-  display: inline-block;
-}
-
-.principal .scroll img {
-  animation: scroll-down 3s infinite forwards;
 }
 
 .principal h1 {

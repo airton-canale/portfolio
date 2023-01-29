@@ -109,8 +109,12 @@ const Projects = forwardRef((props, ref) => {
                 <div class="container-button">
                   <a href={project.redirect}>
                     <div class="redirect">
-                      <img src="/assets/link.png" alt="download curriculum" />
-                      <p>Redirect</p>
+                      <img
+                        src="/assets/link.png"
+                        alt="open project"
+                        target="_blank"
+                      />
+                      <a target="_blank">Redirect</a>
                     </div>
                   </a>
                 </div>

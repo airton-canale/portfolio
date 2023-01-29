@@ -37,7 +37,7 @@ const Experience = forwardRef((props, ref) => {
                 <p class="experiencia__descricao-local">
                   Concordia Labs - Freelancer
                 </p>
-                <ul>
+                <ul className="list-disc">
                   <li>JavaScript</li>
                   <li>React Js</li>
                   <li>Python</li>

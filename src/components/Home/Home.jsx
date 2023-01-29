@@ -40,10 +40,11 @@ const Home = ({ onScrollClick }) => {
           data-tilt
         />
       </div>
-      <div className="scroll">
+      <div class="scroll">
         <a onClick={onScrollClick}>
           {" "}
-          <p> scroll down </p> <img src="/assets/scroll.png" alt="scroll" />
+          <p class="inline"> scroll down </p>
+          <img class="inline" src="/assets/scroll.png" alt="scroll" />
         </a>
       </div>
     </section>

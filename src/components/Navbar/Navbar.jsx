@@ -24,7 +24,7 @@ const Navbar = ({ links }) => {
             );
           })}
         </ul>
-        <div className="oi">
+        {/* <div className="oi">
           {theme === "light" ? (
             <MdDarkMode
               size={20}
@@ -38,7 +38,7 @@ const Navbar = ({ links }) => {
               onClick={() => setTheme("light")}
             ></BsFillLightbulbFill>
           )}
-        </div>
+        </div> */}
       </nav>
     </header>
   );

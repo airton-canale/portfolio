@@ -1,4 +1,3 @@
-// import { ThemeContext } from "@emotion/react"
 import { useContext, createContext, useState, useEffect } from "react";
 
 const ThemeContext = createContext();

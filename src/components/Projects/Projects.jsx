@@ -48,6 +48,14 @@ const Projects = forwardRef((props, ref) => {
       bio: "This was my first project that I used to practiced my knowledge of ReactJS and API consumption.",
       stack: ["ReactJS", "JavaScript", "CSS"],
     },
+    {
+      url: "/assets/projects-images/firebase.png",
+      title: "Chat Firebase",
+      redirect: "https://chat-firebase.canale.dev",
+      bio: "This was a project that I used to learn about Firebase, Google Authentication and practice my knowledge of databases, ReactJS and API consumption."
+      ,
+      stack: ["ReactJS", "JavaScript", "CSS"],
+    },
   ];
   const [sliderRef, instanceRef] = useKeenSlider({
     slideChanged() {},
@@ -62,36 +70,38 @@ const Projects = forwardRef((props, ref) => {
 
   return (
     <>
-      <section class="projetos" id="projetos" ref={ref}>
+      <section className="dark:bg-dark-200 bg-white" id="projetos" ref={ref}>
         <div className="container-images">
           <button className="prev" onClick={() => instanceRef.current.prev()}>
             {"<"}
           </button>
+          <div className="container-images">
           {projectsCarousel.map((project, i) => {
             return (
               <>
                 <img
                   onClick={() => instanceRef.current.moveToIdx(i)}
                   className={["images", activeSlide === i && "active-project"]
-                    .filter(Boolean)
-                    .join(" ")}
+                  .filter(Boolean)
+                  .join(" ")}
                   src={project.url}
                   alt={project.title}
-                />
+                  />
               </>
             );
           })}
+          </div>
           <button className="next" onClick={() => instanceRef.current.next()}>
             {">"}
           </button>
         </div>
-        <h1>Projetos</h1>
+        <h1 className="oi">Projetos</h1>
         <div ref={sliderRef} className="keen-slider">
           {projectsCarousel.map((project) => {
             return (
               <div className="keen-slider__slide projects">
                 <div>
-                  <h1>{project.title}</h1>
+                  <h1 className="text-[25px]">{project.title}</h1>
                 </div>
                 <div>
                   <img className="image" src={project.url}></img>
@@ -106,9 +116,9 @@ const Projects = forwardRef((props, ref) => {
                     })}
                   </ul>
                 </div>
-                <div class="container-button">
+                <div className="container-button">
                   <a href={project.redirect}>
-                    <div class="redirect">
+                    <div className="redirect">
                       <img
                         src="/assets/link.png"
                         alt="open project"

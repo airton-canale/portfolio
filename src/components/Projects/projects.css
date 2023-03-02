@@ -78,11 +78,17 @@
 
 .project-ul {
   font-size: 20px;
+  text-align: center;
 }
 
 .project-link a:hover {
   background-color: #272727;
   text-shadow: 1px 1px 3px #00bbc5;
+}
+
+.oi {
+  padding: 40px;
+  font-size: 25px
 }
 
 .project-link a:before {
@@ -115,7 +121,6 @@
 .container-images {
   display: flex;
   flex-direction: row;
-  margin-bottom: 90px;
   gap: 20px;
   justify-content: center;
 }

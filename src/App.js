@@ -1,10 +1,10 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
 import About from "./components/About";
 import { useRef } from "react";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Home from "./components/Home/Home";
 
 function App() {
   const aboutRef = useRef();
@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <div class="App">
+    <div className="App">
       <Navbar
         links={[
           {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import GradientButton from "../Buttons/GradientButton";
 import "./home.css";
 
 const Home = ({ onScrollClick }) => {
@@ -20,10 +21,12 @@ const Home = ({ onScrollClick }) => {
         <h1>Desenvolvedor Front-End</h1>
         <div className="principal__botao">
           <a href="https://www.linkedin.com/in/airton-canale/" target="_blank">
-            <div className="principal__botao-linkedin">
-              <img src="/assets/linkedin.png" alt="linkedin" />
-              <p>LinkedIn</p>
-            </div>
+              <GradientButton 
+              src={"/assets/linkedin.png" }
+              alt={"linkedin"}
+              text={"Linkedin"}
+              className={"principal__botao-linkedin"}
+              />
           </a>
           <a href="https://github.com/airton-canale" target="_blank">
             <div className="principal__botao-github">

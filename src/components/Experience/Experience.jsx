@@ -6,14 +6,15 @@ const Experience = forwardRef((props, ref) => {
 
   return (
     <section
-      className="experiencia"
+      className="py-[6.5%] px-[15%] min-h-[35vh] experiencia"
       id="experiencia"
+      data-anime="js-scroll"
       ref={ref}
     >
       <h1>Experiência</h1>
-      <div className="experiencia__wrapper">
-        <section className="experiencia__lugares">
-          <ul>
+      <div className="flex experiencia__wrapper">
+        <section className="w-[200px] pointer experiencia__lugares">
+          <ul className="p-0" data-tab="menu">
             <li
               className={selectedTab === 0 && "active"}
               onClick={() => setSelectedTab(0)}
@@ -28,16 +29,16 @@ const Experience = forwardRef((props, ref) => {
             </li>
           </ul>
         </section>
-        <div className="experiencia__descricao" >
+        <div className="w-3/5 relative ml-[5rem] experiencia__descricao" data-tab="content">
           {
             [
               <section key={1} className="show-right">
                 <h2>Desenvolvedor Front-End</h2>
                 <span>Jul 2022 - O momento</span>
-                <p class="experiencia__descricao-local">
+                <p className="experiencia__descricao-local">
                   Concordia Labs - Freelancer
                 </p>
-                <ul className="list-disc">
+                <ul>
                   <li>JavaScript</li>
                   <li>React Js</li>
                   <li>Python</li>

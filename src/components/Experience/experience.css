@@ -18,20 +18,20 @@
     font-weight: 600;
   }
 
-.experiencia {
+/* .experiencia {
   padding: 6.5% 15%;
   min-height: 35vh;
-}
+} */
 
 
-.experiencia__wrapper {
+/* .experiencia__wrapper {
   display: flex;
-}
+} */
 
-.experiencia__lugares {
+/* .experiencia__lugares {
   width: 200px;
   cursor: pointer;
-}
+} */
 
 .experiencia__lugares ul {
   list-style: none;
@@ -74,6 +74,11 @@
 .experiencia__descricao h2 {
   font-size: 1.4rem;
   display: inline-block;
+}
+
+.experiencia h1 {
+  font-size: 1.5rem;
+
 }
 
 .experiencia__descricao span {

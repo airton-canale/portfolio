@@ -64,3 +64,9 @@
   color: #8566e5;
   cursor: pointer;
 }
+
+@media (max-width: 650px) {
+  #menu {
+    display: none;
+  }
+}

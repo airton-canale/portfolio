@@ -52,8 +52,7 @@ const Projects = forwardRef((props, ref) => {
       url: "/assets/projects-images/firebase.png",
       title: "Chat Firebase",
       redirect: "https://chat-firebase.canale.dev",
-      bio: "This was a project that I used to learn about Firebase, Google Authentication and practice my knowledge of databases, ReactJS and API consumption."
-      ,
+      bio: "This was a project that I used to learn about Firebase, Google Authentication and practice my knowledge of databases, ReactJS and API consumption.",
       stack: ["ReactJS", "JavaScript", "CSS"],
     },
   ];
@@ -76,26 +75,26 @@ const Projects = forwardRef((props, ref) => {
             {"<"}
           </button>
           <div className="container-images">
-          {projectsCarousel.map((project, i) => {
-            return (
-              <>
-                <img
-                  onClick={() => instanceRef.current.moveToIdx(i)}
-                  className={["images", activeSlide === i && "active-project"]
-                  .filter(Boolean)
-                  .join(" ")}
-                  src={project.url}
-                  alt={project.title}
+            {projectsCarousel.map((project, i) => {
+              return (
+                <>
+                  <img
+                    onClick={() => instanceRef.current.moveToIdx(i)}
+                    className={["images", activeSlide === i && "active-project"]
+                      .filter(Boolean)
+                      .join(" ")}
+                    src={project.url}
+                    alt={project.title}
                   />
-              </>
-            );
-          })}
+                </>
+              );
+            })}
           </div>
           <button className="next" onClick={() => instanceRef.current.next()}>
             {">"}
           </button>
         </div>
-        <h1 className="oi">Projetos</h1>
+        <h1 className="projetos-h1">Projetos</h1>
         <div ref={sliderRef} className="keen-slider">
           {projectsCarousel.map((project) => {
             return (
@@ -103,8 +102,26 @@ const Projects = forwardRef((props, ref) => {
                 <div>
                   <h1 className="text-[25px]">{project.title}</h1>
                 </div>
-                <div>
-                  <img className="image" src={project.url}></img>
+                <div className="container-mobile">
+                  <div>
+                    <button
+                      className="prev"
+                      onClick={() => instanceRef.current.prev()}
+                    >
+                      {"<"}
+                    </button>
+                  </div>
+                  <div>
+                    <img className="image" src={project.url}></img>
+                  </div>
+                  <div>
+                    <button
+                      className="next"
+                      onClick={() => instanceRef.current.next()}
+                    >
+                      {">"}
+                    </button>
+                  </div>
                 </div>
                 <div>
                   <h2 className="project-bio">{project.bio}</h2>

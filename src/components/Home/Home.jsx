@@ -20,7 +20,7 @@ const Home = ({ onScrollClick }) => {
         <span className="principal__input-cursor"></span>
         <h1>Desenvolvedor Front-End</h1>
         <div className="principal__botao">
-          <a href="https://www.linkedin.com/in/airton-canale/" target="_blank">
+          <a href="https://www.linkedin.com/in/airton-canale-045967237/" target="_blank">
               <GradientButton 
               src={"/assets/linkedin.png" }
               alt={"linkedin"}

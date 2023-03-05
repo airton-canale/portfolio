@@ -31,11 +31,11 @@ const About = forwardRef((props, ref) => {
           >
             <div className="flex items-center pt-[3px] px-[5px] pb-[5px] justify-evenly w-36 rounded-lg relative bg-dark-100 mt-4 font-semibold text-base tracking-[1.5px] h-10 sobre-mim__descricao-buttons-curriculo">
               <img
-                className="pt-[9px] px-0 pb-[5px] mr-[2px]"
+                className="pt-[9px] px-0 pb-[5px]"
                 src="/assets/cloud-download.png"
                 alt="download curriculum"
               />
-              <p className="pt-[9px] px-0 pb-[5px] ml-[2px]">Currículo</p>
+              <p className="pt-[9px] px-0 pb-[5px]">Currículo</p>
             </div>
           </a>
           <a

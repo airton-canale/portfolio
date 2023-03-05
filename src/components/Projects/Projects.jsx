@@ -69,7 +69,7 @@ const Projects = forwardRef((props, ref) => {
 
   return (
     <>
-      <section className="dark:bg-dark-200 bg-white" id="projetos" ref={ref}>
+      <section className="bg-dark-200" id="projetos" ref={ref}>
         <div className="container-images">
           <button className="prev" onClick={() => instanceRef.current.prev()}>
             {"<"}

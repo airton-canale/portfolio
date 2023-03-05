@@ -4,7 +4,7 @@ import "./about.css";
 const About = forwardRef((props, ref) => {
   return (
     <section
-      className="dark:bg-dark-200 flex justify-around z-0 bg-white relative py-[6.5%] px-[15%] min-h-[35vh] sobre-mim"
+      className="bg-dark-200 flex justify-around z-0 relative py-[6.5%] px-[15%] min-h-[35vh] sobre-mim"
       id="sobre"
       ref={ref}
     >
@@ -31,11 +31,11 @@ const About = forwardRef((props, ref) => {
           >
             <div className="flex items-center pt-[3px] px-[5px] pb-[5px] justify-evenly w-36 rounded-lg relative bg-dark-100 mt-4 font-semibold text-base tracking-[1.5px] h-10 sobre-mim__descricao-buttons-curriculo">
               <img
-                className="pt-[9px] px-0 pb-[5px]"
+                className="pt-[9px] px-0 pb-[5px] mr-[2px]"
                 src="/assets/cloud-download.png"
                 alt="download curriculum"
               />
-              <p className="pt-[9px] px-0 pb-[5px]">Currículo</p>
+              <p className="pt-[9px] px-0 pb-[5px] ml-[2px]">Currículo</p>
             </div>
           </a>
           <a

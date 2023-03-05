@@ -20,19 +20,24 @@ const Home = ({ onScrollClick }) => {
         <span className="principal__input-cursor"></span>
         <h1>Desenvolvedor Front-End</h1>
         <div className="principal__botao">
-          <a href="https://www.linkedin.com/in/airton-canale-045967237/" target="_blank">
-              <GradientButton 
-              src={"/assets/linkedin.png" }
+          <a
+            href="https://www.linkedin.com/in/airton-canale-045967237/"
+            target="_blank"
+          >
+            <GradientButton
+              src={"/assets/linkedin.png"}
               alt={"linkedin"}
               text={"Linkedin"}
               className={"principal__botao-linkedin"}
-              />
+            />
           </a>
           <a href="https://github.com/airton-canale" target="_blank">
-            <div className="principal__botao-github">
-              <img src="/assets/github.png" alt="github" />
-              <p>Github</p>
-            </div>
+            <GradientButton
+              src={"/assets/github.png"}
+              alt={"github"}
+              text={"Github"}
+              className={"principal__botao-github"}
+            />
           </a>
         </div>
       </div>

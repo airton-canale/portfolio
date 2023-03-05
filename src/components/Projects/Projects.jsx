@@ -8,7 +8,7 @@ const Projects = forwardRef((props, ref) => {
     {
       url: "/assets/projects-images/netflix.png",
       title: "Netflix Clone",
-      redirect: "https://react-calculator.canale.dev",
+      redirect: "https://netflix.canale.dev",
       bio: "This is a project that i practice my knowledge of ReactJS and css properties.",
       show: "This application shows a simillar netflix webpage built in ReactJS.",
       stack: ["ReactJS", "JavaScript", "CSS"],

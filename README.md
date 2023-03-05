@@ -1,5 +1,5 @@
 <p align="center">
-<img margin-left= "300px" src="./github/banner.png" alt="Banner">
+<img margin-left= "300px" src="./github/banner.jpg" alt="Banner">
 </p>  
 <h1 align="center"><strong></strong></h1>
 <h1 align="center"><strong>My Profile</strong></h1>
@@ -16,7 +16,7 @@
 
 
 
-### This is a project that I used to practice my knowledge of TailwindCSS, ReactJS and learn about i18n library.
+### This is a project that I used to practice my knowledge of TailwindCSS, ReactJS and learn about dark theme tailwind.
 
 <br>
 
@@ -26,14 +26,14 @@
 <p>This application shows my portfolio built in ReactJS.</p>
 
 <br>
-<img src="./github/interface.gif" alt="Readme Gif">
+<img src="./github/readme.gif" alt="Readme Gif">
 <br>
 <br>
 
 ## 🚀 Deploy
- -  https://interface-tailwind.canale.dev
+ -  https://airton.canale.dev
 
- - This application was deployed with Github Pages library 
+ - This application was deployed with Github Pages library.
 
 
  ```bash
@@ -48,9 +48,9 @@ $ npm run deploy
 
 ```bash
 # clone it
-$ git clone git@github.com:airton-canale/interface-tailwind.git
+$ git clone git@github.com:airton-canale/portfolio.git
 
-$ cd interface-tailwind
+$ cd portfolio
 
 # Install dependencies
 $ npm install
